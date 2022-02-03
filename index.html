@@ -16,6 +16,7 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
+    /* core root style classes */
     *:root {
       --main-background: hsl(233, 47%, 7%);
       --Dark-desaturated-blue-card-background: hsl(244, 38%, 16%);
@@ -30,37 +31,169 @@
 
     * {
       padding: 0;
-      margin: 0;
+      margin: 0 auto;
+
       box-sizing: border-box;
     }
 
     body {
       font-size: 15px;
+      background-color: var(--main-background);
+      font-family: 'Lexend Deca', sans-serif;
+      padding: 0;
+      margin: 0;
+
+
+
+
     }
 
-    .attribution {
-      font-size: 11px;
+    img {
+      width: 320px;
+      border-top-left-radius: 1rem;
+      border-top-right-radius: 1rem;
+
+    }
+
+    .image {
+      padding: 0;
+      margin: 0;
+      margin-top: 5rem;
+      height: 200px;
+    }
+
+    .container {
+      display: flex;
+      justify-items: center;
+      flex-direction: column;
+      align-items: center;
+    }
+
+
+
+
+
+
+
+    .info {
+
+      width: 320px;
+
+
+
+      background-color: var(--Dark-desaturated-blue-card-background)
+    }
+
+    .main-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       text-align: center;
+
+      line-height: 1.5rem;
+    }
+
+    .main-info h2 {
+      color: var(--White-main-heading-stats);
+      font-weight: 700;
+      font-family: 'Lexend Deca', sans-serif;
+      line-height: 2rem;
+      margin-bottom: 1rem;
+      padding-left: 2.5rem;
+      padding-right: 2.5rem;
+      margin-top: 2rem;
+
+
+
+      word-spacing: 0.2rem;
+      width: 100%;
+
+
+    }
+
+    span {
+      color: var(--Soft-violet-accent);
+    }
+
+    .main-info p {
+      color: var(--Slightly-transparent-white-main-paragraph);
+      width: 85%;
+    }
+
+    .stats {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      text-align: center;
+      margin-top: 2rem;
+      padding-bottom: 2rem;
+
+    }
+
+    .box {
+      padding: 1rem;
+    }
+
+    .box h3 {
+      color: var(--White-main-heading-stats);
+      font-weight: 700;
+      font-family: 'Inter', sans-serif;
+      padding-bottom: 0.5rem;
+
+    }
+
+    .box p {
+      color: var(--Slightly-transparent-white-stat-headings);
+    }
+
+    /* main css styling */
+    .attribution {
+      font-size: 15px;
+      text-align: center;
+      color: var(--White-main-heading-stats);
+      font-family: 'Lexend Deca', sans-serif;
     }
 
     .attribution a {
       color: hsl(228, 45%, 44%);
+      font-family: 'Lexend Deca', sans-serif;
+    }
+
+    footer {
+      margin-top: 2rem;
+      font-size: 15px;
+      font-family: 'Lexend Deca', sans-serif;
     }
   </style>
 </head>
 
+<!-- start of the body -->
+
 <body>
+
+  <!-- start of the main container -->
   <main class="container">
+
+    <div class="image">
+
+      <img src="./images/image-header-mobile.jpg">
+
+
+
+    </div>
     <section class="info">
-      <div class="image">
-        <img src="./images/image-header-mobile.jpg">
-      </div>
+
+      <!-- Iformation section-->
       <div class="main-info">
-        <h2>Get insights that help your business grow.</h2>
+        <h2>Get <span>insights</span> that help your business grow.</h2>
 
         <p>Discover the benefits of data analytics and make better decisions regarding revenue, customer
           experience, and overall efficiency.</p>
       </div>
+      <!-- start of the stats box section-->
       <div class="stats">
         <div class="box">
           <h3>10k+</h3>
@@ -76,7 +209,10 @@
         </div>
       </div>
     </section>
+
   </main>
+
+  <!-- Footer outside of the container -->
   <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Your Name Here</a>.
