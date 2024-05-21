@@ -60,7 +60,7 @@ The final step was to add the javascript for the buttons and the compoent to wor
 
 
 ### What I learned
-I learned the timeout method and how to refreh the page after a function runs.
+I learned how to tak a design and make it out from a pgoto.
 
 
 ## Author
