@@ -98,14 +98,14 @@
         }
 
         .image{
-            height: 358px;
+            height: 400px;
             border-top-left-radius: 0;
             border-bottom-right-radius: 1rem;
         }
 
         .overlay{
             background-color: var(--Soft-violet-accent);
-            height: 358px;
+            height: 400px;
             border-top-left-radius: 0;
             border-bottom-right-radius: 1rem;
             opacity: 0.5;
