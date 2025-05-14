@@ -42,7 +42,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: https://00awaudby.github.io/stats-preview/
+- Live Site URL: https://ashleywaudbydev.github.io/stats-preview/
 
 ## My process
 The process was as folows, i built out the html first using the markup provided, i then added the classes i needed for the styling , next i styled the project and added the state classes for hover and focus states.
